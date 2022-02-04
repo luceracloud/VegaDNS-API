@@ -24,7 +24,7 @@ class ValidateString(object):
 
     def email(self, email=None):
         regex = re.compile(
-            r'^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*$'
+            r'^[_a-zA-Z0-9-]+(\.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*$'
         )
         if regex.match(email):
             return True
